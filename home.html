@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We provide professional rebuilt vehicle inspections in West Palm Beach. Contact us today for a reliable inspection service.">
+    <meta name="keywords" content="vehicle inspection, rebuilt inspection, salvage title, car inspection services, West Palm Beach">
+    <title>Car Inspection Services</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #3c8dbc, #28577a);
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #357ca5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #28577a;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .services, .contact, .requirements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(33% - 20px);
+            background: linear-gradient(145deg, #3c8dbc, #28577a);
+            color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #28577a;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                padding: 10px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .card {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+
+            footer .social-icons {
+                margin-top: 15px;
+            }
+
+            footer .social-icons a {
+                font-size: 1rem;
+                margin: 0 8px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .form-section {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            color: #28577a;
+            margin-bottom: 20px;
+        }
+
+        .form-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .form-list li {
+            background: linear-gradient(145deg, #3c8dbc, #28577a);
+            color: #fff;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .form-list li:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-list li .form-link {
+            color: #ffdd57;
+            text-decoration: underline;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form-list li .form-link:hover {
+            color: #ffd633;
+        }
+
+        .appointment-section {
+            background: linear-gradient(145deg, #3c8dbc, #28577a);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointment-section h2 {
+            color: #ffdd57;
+        }
+
+        .appointment-section a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        .appointment-section a:hover {
+            text-decoration: underline;
+        }
+
+        .working-hours-section {
+            margin-top: 20px;
+        }
+
+        .working-hours-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .working-hours-list li {
+            font-size: 18px;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e2f1ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to W.P.B. Rebuilt Inspection</h1>
+        <p>Ensuring Safety and Reliability for Your Vehicle</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#forms">Forms</a>
+        <a href="#working-hours">Working Hours</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Rebuilt Inspections</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="requirements">
+        <h2>Inspection Requirements</h2>
+        <div class="requirements">
+            <div class="card">
+                <h3>SALVAGE TITLE</h3>
+            </div>
+            <div class="card">
+                <h3>BILL OF SALE</h3>
+            </div>
+            <div class="card">
+                <h3>Receipts for Replaced Parts</h3>
+            </div>
+            <div class="card">
+                <h3>Body shop workorder (If applicable)</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="forms">
+        <div class="form-section">
+            <h2>Forms</h2>
+            <ul class="form-list">
+                <li>Application for Certificate of Title
+                    <a href="https://www.flhsmv.gov/pdf/forms/82040.pdf" target="_blank" class="form-link">Form</a>
+                </li>
+                <li>Statement of Builder
+                    <a href="https://www.flhsmv.gov/pdf/forms/84490.pdf" target="_blank" class="form-link">Form</a>
+                </li>
+                <li>Statement of Builder - Additional Sheet
+                    <a href="https://www.flhsmv.gov/pdf/forms/84491.pdf" target="_blank" class="form-link">Form</a>
+                </li>
+                <li>Bill of Sale
+                    <a href="https://www.flhsmv.gov/pdf/forms/82050.pdf" target="_blank" class="form-link">Form</a>
+                </li>
+                <li>Power of Attorney
+                    <a href="https://www.flhsmv.gov/pdf/forms/82053.pdf" target="_blank" class="form-link">Form</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="appointment-section" id="appointment">
+            <h2>Appointment Confirmation</h2>
+            <p>
+                For appointment confirmation, send us an email at 
+                <a href="mailto:wpbrebuilt23@gmail.com">wpbrebuilt23@gmail.com</a>
+                with your <strong>First Name</strong>, <strong>Last Name</strong>, and <strong>Telephone Number</strong>. Please keep in mind that we have a first-come, first-served policy regardless of appointment.
+            </p>
+        </div>
+        <div class="working-hours-section">
+            <h2>Our Working Hours</h2>
+            <ul class="working-hours-list">
+                <li>Thursday - Friday: 8:00 AM - 5:00 PM</li>
+                <li>Saturday: 9:00 AM - 1:00 PM</li>
+                <li>Sunday: Closed</li>
+                <li>Monday - Tuesday - Wednesday: 8:00 AM - 5:00 PM</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <div>
+                <h3>Visit Us</h3>
+                <p><a href="https://www.google.com/maps/@26.7023219,-80.0748626,3a,75y,187.68h,90t/data=!3m7!1e1!3m5!1swmrunQFAI2WKK2nqpEp5kA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DwmrunQFAI2WKK2nqpEp5kA%26yaw%3D187.68!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="form-link">1810 Old Okeechobee Rd, West Palm Beach, FL 33409</a></p>
+            </div>
+            <div>
+                <h3>Call Us</h3>
+                <p><a href="tel:+15615578543">(561) 557-8543</a></p>
+            </div>
+            <div>
+                <h3>Email Us</h3>
+                <p><a href="mailto:wpbrebuilt23@gmail.com">info@wpbrebuiltinspections.com</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 W.P.B. Rebuilt Inspection. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
